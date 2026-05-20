@@ -1,6 +1,6 @@
-#### **Reports of Urban Issues in Zurich: A Spatial and Temporal Analysis**
+# **Reports of Urban Issues in Zurich: A Spatial and Temporal Analysis**
 
-###### *Description:*
+### *Description:*
 
 This Project analyses possible spatial and temporal pattern of Reports of Urban Issues in Zurich using open data from Zueriewieneu reporting platform and spatial boundaries of Zurichs neighborhoods.
 
@@ -18,17 +18,17 @@ The goal is to identify possible patterns, thats why the follwing questions are 
 
 
 
-###### *Data Source:*
+### *Data Source:*
 
-1. Reports of Urban Issues in Zurich from the platform Zueriwieneu (zueriwieneu\_data.csv): 
+1. Reports of Urban Issues in Zurich from the platform Zueriwieneu (zueriwieneu\_data.csv):
 Reports from 2013 till 2026, Point Data set with originally 72606 entries and 19 data columns
 Link to obatin the original Dataset:https://data.stadt-zuerich.ch/dataset/geo\_zueri\_wie\_neu/resource/eacc0a5c-5526-47e6-bdb5-c5174491744e
-- The metadata set was read beforehand, which lead o some information about the datacolumns
+* The metadata set was read beforehand, which lead o some information about the datacolumns
 2. Spatial Boundaries of Zurichs Neighborhood form open Data Stadt Zurich:3 layers but the "stzh.adm\_statistische\_quartiere\_v.gpkg": Polygon Layer was used with originally 34 entries and 7 columns, CRS:2056, Link to obatin the original Dataset:https://data.stadt-zuerich.ch/dataset/geo\_statistische\_quartiere/resource/07562def-426f-4e00-87d7-3a0e831c6f93
 
 
 
-###### *Setup Instructions:*
+## *Setup Instructions:*
 
 This project was developed using Python 3.11 in a Conda environment.
 
@@ -44,7 +44,7 @@ To recreate the project environment, run the following command from the root fol
 
 
 
-###### *Execution Order:*
+## *Execution Order:*
 
 First, execute the Jupyter Notebook: "reports\_cleaning.ipynb" from top to Bottom. The output will be safed in the relative file data/proccesseddata as " zueriwieneu\_cleaned.csv"
 
