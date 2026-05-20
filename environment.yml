@@ -1,0 +1,14 @@
+name: project_ri
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas
+  - jupyter
+  - geopandas
+  - ipykernel
+  - matplotlib
+  - cmcrameri
+  - contextily
+  - seaborn
+prefix: C:\Users\lueth\miniconda3\envs\project_ri
