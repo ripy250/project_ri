@@ -14,17 +14,20 @@ The goal is to identify possible patterns, thats why the follwing questions are 
 2. Which categories are the most common across the city of Zurich?
 3. How does the number of reports vary per month? vary per year?
 4. Are certain problem categories concentrated in specific neighbourhoods?
-5. Does processing time differ by different categories?
+5. Does processing time differ by different categories or neighborhoods?
 
 
 
 ### *Data Source:*
 
+*The rawdata folder is not included in this repository. Therefore the following dataset have to be downloaded first and placed into data/rawdata/data/*
+
+
+
 1. Reports of Urban Issues in Zurich from the platform Zueriwieneu (zueriwieneu\_data.csv):
 Reports from 2013 till 2026, Point Data set with originally 72606 entries and 19 data columns
 Link to obatin the original Dataset:https://data.stadt-zuerich.ch/dataset/geo\_zueri\_wie\_neu/resource/eacc0a5c-5526-47e6-bdb5-c5174491744e
-* The metadata set was read beforehand, which lead o some information about the datacolumns
-2. Spatial Boundaries of Zurichs Neighborhood form open Data Stadt Zurich:3 layers but the "stzh.adm\_statistische\_quartiere\_v.gpkg": Polygon Layer was used with originally 34 entries and 7 columns, CRS:2056, Link to obatin the original Dataset:https://data.stadt-zuerich.ch/dataset/geo\_statistische\_quartiere/resource/07562def-426f-4e00-87d7-3a0e831c6f93
+2. Spatial Boundaries of Zurichs Neighborhood form open Data Stadt Zurich (quartier\_data.gpkg):3 layers but the "stzh.adm\_statistische\_quartiere\_v.gpkg": Polygon Layer was used with originally 34 entries and 7 columns, CRS:2056, Link to obatin the original Dataset:https://data.stadt-zuerich.ch/dataset/geo\_statistische\_quartiere/resource/07562def-426f-4e00-87d7-3a0e831c6f93
 
 
 
@@ -54,9 +57,16 @@ Seconldy execute the Jupyter Notebook: "spatialjoin.ipynb" from top to Bottom. T
 
 
 
-Lastly run the Jupyter Notebook: "analysis\_and\_visualization.ipynb" from top to Bottom. Some important visualisations will be exported into the "output" ordner.
+Lastly run the Jupyter Notebook: "analysis\_and\_visualization.ipynb" from top to Bottom. The visualisations and tables will be exported into the "output" ordner.
 
+Important outputs are:
 
-
-OUTPUTS!!!
+* a visualisation (map) of the report datapoints and the neighborhoods (polygons)
+* a table and visualization (bar chart) of which neighborhood and Kreis receives the highest amount of reports
+* a table, little detailed insight, and visualization(bar chart) of which category of report is most common
+* a visualization (line chart) of the progress of reports per month and per year
+* a frequencytable of absolut count of each cateogry in the neighborhoods
+* a visualisation (map) of the dominat category in each neighborhood, but without the most dominant category "Abfall/Sammelstelle"
+* a table /statistics on the progressing time of each category and neighborhood(top 5)
+* a visualisation (barchart) of the progressing time of each category and neighborhood
 
